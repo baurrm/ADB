@@ -1,0 +1,217 @@
+ADB A2
+Assignment 8 (Partitions)
+Furkan Ocalan, Mustafa Bayram, Bauyrzhan Marat
+
+1. Hash Partitions
+   Hash Partition useful for situations where the ranges are not applicable such as product ID, employee number and the like. For this spreading out, hash keys are used effectively and efficiently.
+   For optimal data distribution, the following requirements should be satisfied: 
+1. Choose a column or combination of columns that is unique or almost unique.
+2. Create multiple partitions and subpartitions for each partition that is a power of two. For example, 2, 4, 8, 16, 32, 64, 128, and so on...
+
+1st Partition: CREATE TABLE orders_hash
+  (order_id  NUMBER,
+   order_date   DATE,
+   store_id     NUMBER,
+   staff_id NUMBER)
+PARTITION BY HASH(order_id) PARTITIONS 4;
+
+/* 2nd QUERY */
+/* Selecting staffs and stores which have avg salary bigger than avg salary then having bigger than 10000 and not null or Aberdeen city and active */
+set timing on;
+
+SELECT first_name,last_name, active, salary, stores.store_name, stores.city, stores.state
+FROM
+(
+    SELECT staffs.*,avg(salary) over (partition by store_id) as avgSalary
+    from MUTABAY.staffs staffs
+)staffs
+FULL OUTER JOIN MUTABAY.stores stores
+ON staffs.store_id=stores.store_id
+FULL OUTER JOIN MUTABAY.orders orders
+ON stores.store_id = orders.store_id
+FULL OUTER JOIN MUTABAY.order_items order_items
+ON orders.order_id = order_items.order_id
+WHERE staffs.salary > staffs.avgsalary AND order_items.discount > 0.05 AND customer_id > 1500
+GROUP BY store_name, first_name, salary, city, state, last_name, active
+having (avg(staffs.salary) > 1000 AND state IS NOT NULL) OR (city = 'Aberdeen' AND active = 1)
+ORDER BY store_name asc;
+
+set timing off;
+
+2nd Partition: CREATE TABLE brands_hash
+  (brand_id  NUMBER,
+   brand_name  VARCHAR(100) NOT NULL,
+)
+PARTITION BY HASH(brand_id)
+PARTITIONS 4
+STORE IN (brand1, brand2, brand3, brand4);
+
+/* 3rd QUERY */
+set timing on;
+
+SELECT  products.product_id, products.product_name, products.list_price, 
+        orders.order_date, orders.required_date, orders.order_status,
+        categories.category_name, brands.brand_name, quantity_id,
+        discount,COUNT(quantity_id) quantity_count, (quantity_id * discount * products.list_price) total
+FROM MUTABAY.order_items order_items
+    full outer join MUTABAY.orders orders on 
+        (orders.order_id = order_items.order_id)
+    full outer join MUTABAY.products products on 
+        (products.product_id = order_items.product_id)
+    full outer join MUTABAY.brands brands on
+        (brands.brand_id = products.brand_id)
+    full outer join MUTABAY.categories categories on
+        (categories.category_id = products.category_id)
+    
+WHERE   (to_date(shipped_date, 'MM-DD-YYYY') - to_date(order_date , 'MM-DD-YYYY') > 2 )
+        OR
+        (to_date(shipped_date, 'MM-DD-YYYY') - to_date(order_date , 'MM-DD-YYYY') = 0 ) 
+GROUP BY products.product_id, products.product_name, products.list_price, 
+       orders.order_date, orders.required_date, orders.order_status,
+       categories.category_name, brands.brand_name, quantity_id,
+       discount
+having AVG(list_price) > 10000
+Order by order_status;
+
+set timing off;
+
+2. Range Partitions
+   Range partitioning maps data to partitions based on ranges of values of the partitioning key that you establish for each partition. It is the most common type of partitioning and is often used with dates
+   Range partitioning is useful when you have distinct ranges of data you want to store together.
+3rd partition: CREATE TABLE orders_date_range
+  ( order_id       NUMBER,
+  customer_id       NUMBER,
+  order_date       DATE,
+  store_id      NUMBER
+  )
+ PARTITION BY RANGE (order_date)
+ ( PARTITION orders_p1_2016 VALUES LESS THAN (TO_DATE('06-01-2016','MON-dd-yyyy'))
+    TABLESPACE tsa
+ , PARTITION orders_p2_2016 VALUES LESS THAN (TO_DATE('12-31-2016','MON-dd-yyyy'))
+    TABLESPACE tsb
+ , PARTITION orders_p1_2017 VALUES LESS THAN (TO_DATE('06-01-2017','MON-dd-yyyy'))
+    TABLESPACE tsc
+ , PARTITION orders_q4_2006 VALUES LESS THAN (TO_DATE('12-31-2017','MON-dd-yyyy'))
+    TABLESPACE tsd
+ );
+
+6 transactions
+UPDATE MUTABAY.stores
+SET MUTABAY.stores.store_name = (
+    SELECT store_name FROM MUTABAY.stores stores
+    INNER JOIN 
+    (
+        SELECT order_i.staff_id, first_name, last_name, phone, email, order_i.store_id, manager_id, active, salary ,
+        order_i.item_id ,order_i.product_id ,order_i.quantity_id ,order_i.discount ,order_i.customer_id ,order_i.order_status ,
+        order_i.order_date ,order_i.required_date ,order_i.shipped_date
+        FROM MUTABAY.staffs staffs
+        FULL OUTER JOIN
+        (   
+            SELECT orders.order_id, item_id, product_id, quantity_id, discount, orders.customer_id, orders.order_status,
+                    orders.order_date, orders.required_date, orders.shipped_date, orders.store_id, orders.staff_id
+            FROM MUTABAY.order_items order_items
+            FULL OUTER JOIN MUTABAY.orders orders
+            ON orders.order_id = order_items.order_id
+            WHERE ORDERS.ORDER_ID IN (SELECT ORDER_ID FROM MUTABAY.ORDER_ITEMS WHERE DISCOUNT > (SELECT AVG(DISCOUNT) FROM MUTABAY.ORDER_ITEMS))
+            OR
+            (order_status = 2)
+            
+        ) order_i
+        ON order_i.staff_id = staffs.staff_id
+        WHERE (discount > 0.48 AND discount < 0.05) AND salary > 5000
+        OR
+        (active = 1 AND discount = 0.4)
+    )order_i_staff
+    ON order_i_staff.store_id = stores.store_id
+    WHERE street='1 Fremont Point' or STATE IS NOT NULL 
+                    fetch first 1 rows only
+);
+
+
+4th partition: CREATE TABLE orders_required_range
+  ( order_id       NUMBER,
+  customer_id       NUMBER,
+  required_date     DATE,
+  store_id      NUMBER
+  )
+ PARTITION BY RANGE (required_date)
+ ( PARTITION required_p1_2016 VALUES LESS THAN (TO_DATE('06-01-2016','MON-dd-yyyy'))
+    TABLESPACE tsa
+ , PARTITION required _p2_2016 VALUES LESS THAN (TO_DATE('12-31-2016','MON-dd-yyyy'))
+    TABLESPACE tsb
+ , PARTITION required _p1_2017 VALUES LESS THAN (TO_DATE('06-01-2017','MON-dd-yyyy'))
+    TABLESPACE tsc
+ , PARTITION required_q4_2006 VALUES LESS THAN (TO_DATE('12-31-2017','MON-dd-yyyy'))
+    TABLESPACE tsd
+ );
+
+5th transactions
+update MUTABAY.order_items set quantity_id = 
+(
+    select quantity_id from MUTABAY.products products
+    full outer join MUTABAY.order_items order_items on order_items.product_id = products.product_id
+    full outer join MUTABAY.stocks stocks on stocks.product_id = products.product_id
+    full outer join MUTABAY.orders orders on order_items.order_id=orders.order_id
+    full outer join MUTABAY.customers customers on orders.customer_id=customers.customer_id
+    full outer join MUTABAY.stores stores on orders.store_id=stores.store_id
+    full outer join MUTABAY.staffs staffs on orders.staff_id=staffs.staff_id
+    where products.product_id in
+        (
+            Select product_id from MUTABAY.order_items where order_id in 
+            (
+                Select order_id from MUTABAY.orders 
+                WHERE 
+                (order_status = 1 AND (to_date(shipped_date, 'MM-DD-YYYY') - to_date(required_date , 'MM-DD-YYYY') = 1 ))
+                OR
+                (order_status = 2 AND (to_date(shipped_date, 'MM-DD-YYYY') - to_date(required_date , 'MM-DD-YYYY') = 0 ))
+            )
+            
+        )fetch next 1 rows only 
+);
+3. Value List Partitions
+   Value List partitioning useful when you want to specifically map rows to partitions based on discrete values
+   Unlike range and hash partitioning, multi-column partition keys are not supported for list partitioning. If a table is partitioned by list, the partitioning key can only consist of a single column of the table.
+
+5th Partition: CREATE TABLE stores
+(store_ id             NUMBER
+, store_name NUMBER
+, customer_id    NUMBER
+, city     VARCHAR 
+, state        VARCHAR(2)
+, zip_code       VARCHAR2(1)
+)
+PARTITION BY LIST (city)
+( PARTITION p_northwest_city VALUES ('Loja', 'Ai Tu')
+, PARTITION p_southwest_city VALUES ('Pasto', 'Onsala', 'Markaryd')
+, PARTITION p_northeast_city VALUES ('Baoshan', 'Parang', 'Metz')
+, PARTITION p_southeast_city VALUES ('Miami', 'Betio Village')
+, PARTITION p_northcentral_city VALUES ('Bontang', 'Betio Village')
+, PARTITION p_southcentral_city VALUES ('Tsuruga', 'Colarado Springs')
+);   
+);
+
+/* 2nd QUERY */
+/* Selecting staffs and stores which have avg salary bigger than avg salary then having bigger than 10000 and not null or Aberdeen city and active */
+set timing on;
+
+SELECT first_name,last_name, active, salary, stores.store_name, stores.city, stores.state
+FROM
+(
+    SELECT staffs.*,avg(salary) over (partition by store_id) as avgSalary
+    from MUTABAY.staffs staffs
+)staffs
+FULL OUTER JOIN MUTABAY.stores stores
+ON staffs.store_id=stores.store_id
+FULL OUTER JOIN MUTABAY.orders orders
+ON stores.store_id = orders.store_id
+FULL OUTER JOIN MUTABAY.order_items order_items
+ON orders.order_id = order_items.order_id
+WHERE staffs.salary > staffs.avgsalary AND order_items.discount > 0.05 AND customer_id > 1500
+GROUP BY store_name, first_name, salary, city, state, last_name, active
+having (avg(staffs.salary) > 1000 AND state IS NOT NULL) OR (city = 'Aberdeen' AND active = 1)
+ORDER BY store_name asc;
+
+set timing off;
+
+
+Queries and TransactionsBefore Indexes and PartitionsWith IndexesAfter with Partitions1st query1.880 0.410 2nd query3.814 1.447 3rd query1.354 0.549 4th transaction1.168 0.726 5th transaction2.139 1.413 6th transaction4.671 20.1 7th transaction0.118 0.118 
