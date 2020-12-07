@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F346263A-04D0-5FC1-0436-BCF2DD16FED7" name="Housing">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:55:08 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="House_ID" id="DFDF6F7B-CB71-94C7-B01E-358FF5F47858">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:18:06 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Family_ID" id="84B0438E-35EF-BC2A-371C-B3043D58C6A5">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:18:12 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Size_in_m2" id="A9D1E732-B152-0432-80AC-78805FA3B66A">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:18:23 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Condition" id="68C42B57-DB99-1EA9-BF05-D495A406207F">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:18:27 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Age" id="6A0C9764-98C4-193F-F0BE-40A872D6F260">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:18:39 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

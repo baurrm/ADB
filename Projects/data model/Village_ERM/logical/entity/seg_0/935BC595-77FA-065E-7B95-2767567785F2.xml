@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="935BC595-77FA-065E-7B95-2767567785F2" name="Job">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:49:01 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Job_ID" id="0A49B6BE-0879-E8CF-4905-67671E8C5D6F">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:49:17 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Job_Name" id="6273D420-E791-DB9D-2DCF-4AD56DF38ACB">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:49:21 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Required_Competence" id="A1A27843-F40C-B3A1-255F-DDDC97ECD46D">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:49:26 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Wage" id="9E2E31BE-85C1-381F-0063-1358628568BB">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:49:34 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Risk_Factor" id="684E68DD-13C0-B1EB-1D2D-D935884270EA">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:49:49 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="can_ be_found_in" directorySegmentName="seg_0" id="C0BA2468-6C06-06ED-C69B-550B52394FAB">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:36:34 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>475D0C0B-07A3-CBE5-0109-A1906D5B93CB</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>2A4E0150-73F5-357C-E95B-428F8DBEF558</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="475D0C0B-07A3-CBE5-0109-A1906D5B93CB" name="Location">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:49:59 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Location_ID" id="BFEA004D-3067-C648-DC64-53D14284B02C">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:53:27 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Location_Name" id="C3CA673F-7617-5384-90AF-CBA4715F45D6">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:53:38 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Job_ID" id="E870CB23-3CA6-FF51-5B13-64196E68A7A2">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:53:55 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Condition" id="9D7309E1-D0EE-9538-F94D-8498E09F8C68">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:54:05 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Max_Number_of_Villegars" id="4085DBB0-775E-2FA9-1D7D-767499FB08D3">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:54:49 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Food_Content" id="2A65696A-5C5A-E599-085A-68B905EDC71B">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:33:56 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Max_Number_of_Animals" id="B7E92388-8D50-7D82-4E89-D88228039800">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:34:26 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

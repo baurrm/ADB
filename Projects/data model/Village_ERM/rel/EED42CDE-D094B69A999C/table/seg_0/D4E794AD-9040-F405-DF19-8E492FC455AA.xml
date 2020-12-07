@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4E794AD-9040-F405-DF19-8E492FC455AA" name="Family">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>B403E332-E3F8-7BFD-CCFA-B9C524CA7392</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Family_ID" id="B5A1684C-F035-034A-51C1-842B691CC2D1">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>21D8E86C-361B-F305-E3FC-00B9D98559FE</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Last_Name" id="454E86D8-2A28-9A1F-A747-04BD53714489">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>73E08EBC-ADD5-C091-FA0F-5A4E388695F4</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Villagar_ID" id="1B7965F0-EB2B-8365-D2EB-1FBF74696D3D">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>A848F75F-FFEF-4BCF-8798-4EB2DDC91632</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Housing_ID" id="44B69013-EAEC-B755-B703-A64653BC8885">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>EA16D91E-8DE8-9296-FB1A-C1C758B82E49</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Family_Happiness" id="BB1C0DF1-47DF-BF19-195A-E1E63FF09B2E">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>C511E904-9DC5-F5BD-BD2A-3F2007B5E330</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Family_ID1" id="67407597-D70D-929B-66E3-90306E461D7F">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Village_Village_ID1" id="F4C69B89-A802-24BD-7547-D33543C4C46D">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F0E4975-CA93-CEF9-534E-7861C718F584" referredColumn="D9DD2E3B-C060-985E-9732-5251885C9D1C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7AA0AEE4-FF7B-E467-2FE9-672A1D6C3735" name="Family_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="67407597-D70D-929B-66E3-90306E461D7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3309FCF2-1ECB-9DEA-F923-9F121F36B2A1" name="Family_Village_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>DEE0BC74-B24C-E836-0D30-B982AB0178CC</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4C69B89-A802-24BD-7547-D33543C4C46D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

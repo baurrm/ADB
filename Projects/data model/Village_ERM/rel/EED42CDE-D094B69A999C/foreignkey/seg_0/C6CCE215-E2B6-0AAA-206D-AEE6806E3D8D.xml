@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C6CCE215-E2B6-0AAA-206D-AEE6806E3D8D" containerWithKeyObject="8E080A51-E89C-F871-9FD3-FBE204652F91" localFKIndex="3E056CB4-542A-CCA5-C2F9-A2D1EA1AB4A2" name="Animals_Villegar_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>1E9E450F-F2F1-CF44-9F06-EBC0B871F430</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<referredTableLongName>Villegar</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DE54CD63-E91D-D73A-F682-5E14ECCF67D1</referredTableID>
+<keyObject>9BCB0479-D1E4-2E62-46F0-5AE60BBFAC91</keyObject>
+<referredKeyID>9BCB0479-D1E4-2E62-46F0-5AE60BBFAC91</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Villegar_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

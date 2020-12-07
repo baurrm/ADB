@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFA75665-7520-164E-4B3F-E8EA209868D2" name="Location">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>475D0C0B-07A3-CBE5-0109-A1906D5B93CB</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Location_ID" id="51EEC406-859C-165F-7224-FBE13DAB839D">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>BFEA004D-3067-C648-DC64-53D14284B02C</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Location_Name" id="F9195652-F9F3-1B80-8122-C76CB35482BF">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>C3CA673F-7617-5384-90AF-CBA4715F45D6</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Job_ID" id="0AEECB54-4B71-4012-24F1-25A33F1C2B80">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>E870CB23-3CA6-FF51-5B13-64196E68A7A2</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Condition" id="1F7FED0D-7659-55EF-E46C-BAB2A6657B3E">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>9D7309E1-D0EE-9538-F94D-8498E09F8C68</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Max_Number_of_Villegars" id="25CB1791-541F-79E7-B869-8B5F349EA931">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>4085DBB0-775E-2FA9-1D7D-767499FB08D3</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Food_Content" id="1436691E-E42A-8FAC-7ECE-5C300258BA33">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>2A65696A-5C5A-E599-085A-68B905EDC71B</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Max_Number_of_Animals" id="4ADC451D-E259-118D-0E00-0FC5FB5D7FDC">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>B7E92388-8D50-7D82-4E89-D88228039800</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Location_ID1" id="8280E32F-BA96-A3C7-1CD3-93DE2A5FE3B6">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Job_Job_ID1" id="12A9D12C-4955-A2BE-8589-D87BABDFCF52">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D09A6E5E-D50B-C1CB-0785-0CE9DB98A4C3" referredColumn="15620769-801E-82F7-848C-FF2BE9D32A6F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="549A9860-DDA3-5A78-FB1B-FF0F65037312" name="Location_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="8280E32F-BA96-A3C7-1CD3-93DE2A5FE3B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46B59058-4D3A-1E7F-89CB-4A90234CE4D7" name="Location__IDX">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>B7D197AE-7F2D-CAA4-7C5D-8F808AFFF3A9</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="12A9D12C-4955-A2BE-8589-D87BABDFCF52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A75BD0E6-4C4E-64E4-7BB9-46DCA5A43CA2" name="Location_Job_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>B7D197AE-7F2D-CAA4-7C5D-8F808AFFF3A9</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12A9D12C-4955-A2BE-8589-D87BABDFCF52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

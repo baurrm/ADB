@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="is_sick" directorySegmentName="seg_0" id="BD6A9371-EF8E-5D00-CD5F-6A622A8C6FBB">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:16:27 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+</engineerTo>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FEDA8CDD-8CE6-74D1-8BE8-34D8F7A6706E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D67F1F2D-099E-6429-8971-DFC496F90256</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F9C93C5-C01A-D9D9-D86A-06D863BA16A2" name="Job">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>935BC595-77FA-065E-7B95-2767567785F2</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Job_ID" id="AC38126C-9945-56EB-C990-478ED355490B">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>0A49B6BE-0879-E8CF-4905-67671E8C5D6F</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Job_Name" id="04BC2ABC-96E5-EA71-4285-86D353CB7F50">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>6273D420-E791-DB9D-2DCF-4AD56DF38ACB</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Required_Competence" id="B83E8D54-0B96-BE53-9900-457730F4459C">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>A1A27843-F40C-B3A1-255F-DDDC97ECD46D</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Wage" id="3E3FDF74-D52F-5D24-5415-760014D84543">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>9E2E31BE-85C1-381F-0063-1358628568BB</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Risk_Factor" id="0DF29A0C-8C3A-6CC1-3108-55F9F2AE7FC8">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>684E68DD-13C0-B1EB-1D2D-D935884270EA</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Job_ID1" id="15620769-801E-82F7-848C-FF2BE9D32A6F">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Villegar_Villegar_ID" id="3AF08155-12F0-1BBA-115C-B295036E42BD">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57CA82F0-B837-720B-B89D-B273ECAE772E" referredColumn="770C08F2-FB20-E9A2-4A64-5FA74C384D91"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0012E5B4-5965-B24F-5E25-ED9A457191CA" name="Job_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="15620769-801E-82F7-848C-FF2BE9D32A6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCA5979E-0805-56A4-0830-363E76EAE59B" name="Job__IDX">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>D0B7905D-5084-4143-0E94-8071D61ED407</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3AF08155-12F0-1BBA-115C-B295036E42BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="563EEAB8-2244-FD32-6D42-4F7687AD8ACB" name="Job_Villegar_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>D0B7905D-5084-4143-0E94-8071D61ED407</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AF08155-12F0-1BBA-115C-B295036E42BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

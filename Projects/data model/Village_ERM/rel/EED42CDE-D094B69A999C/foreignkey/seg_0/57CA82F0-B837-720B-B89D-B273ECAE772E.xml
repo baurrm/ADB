@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="57CA82F0-B837-720B-B89D-B273ECAE772E" containerWithKeyObject="7F9C93C5-C01A-D9D9-D86A-06D863BA16A2" localFKIndex="563EEAB8-2244-FD32-6D42-4F7687AD8ACB" name="Job_Villegar_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>D0B7905D-5084-4143-0E94-8071D61ED407</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<referredTableLongName>Villegar</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DE54CD63-E91D-D73A-F682-5E14ECCF67D1</referredTableID>
+<keyObject>9BCB0479-D1E4-2E62-46F0-5AE60BBFAC91</keyObject>
+<referredKeyID>9BCB0479-D1E4-2E62-46F0-5AE60BBFAC91</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Villegar_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

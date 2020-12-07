@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2A4E0150-73F5-357C-E95B-428F8DBEF558" name="Village">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:24:33 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Village_ID" id="B4F6F6EF-20AF-1EBB-820B-ABC4FE9FD083">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:25:15 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Village_Name" id="AA4C6511-9AA5-7083-1F5F-EEECB07D7894">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:25:32 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Family_ID" id="E66D072B-BFB1-5E40-F619-F8E68B82E3C3">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:25:19 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Location_ID" id="C0DDB532-EC14-BF87-D845-F532618D8CE8">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:25:40 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Popularity" id="6500DFDC-539D-C951-8D67-79D95118CD51">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:26:01 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

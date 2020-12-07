@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4110518F-7217-25A9-1E66-A3019E515F17" name="Disease">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>D67F1F2D-099E-6429-8971-DFC496F90256</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Disease_ID" id="44E49651-36A3-2C83-F324-DD464F407165">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>C4400056-9FBF-2A31-06DE-15FE26532BCD</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Disease_Name" id="B46FAB8C-8621-A10D-0575-54022C43A262">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>6C6FA642-BE8D-DE69-124E-3610D040CBFD</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Duration_in_Days" id="1DF7F82A-2E0F-9F04-FC5F-D2CB74B964C6">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>7EC96A47-CBF6-54E7-1691-74A23D22F579</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Risk_of_death" id="C6B09E38-84AB-D52C-6DCA-B98329FD6504">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>7A3BE7C8-8C5F-CE60-55D0-59A0DA6F33AF</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Competence_Malus" id="3CAC1FA6-0A14-41E3-EBAE-E7AF3193AAC9">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>63AE8467-6AD6-0765-713E-EA601EF5F6D6</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Villegar_Villegar_ID" id="339CF8EC-261F-70E4-9E02-622CA18D42E1">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="167A8633-44C0-9E43-351A-B53B373EE291" referredColumn="770C08F2-FB20-E9A2-4A64-5FA74C384D91"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF31210A-9174-CDCD-9E64-03B19ECBA4D3" name="Disease_Villegar_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>BD6A9371-EF8E-5D00-CD5F-6A622A8C6FBB</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="339CF8EC-261F-70E4-9E02-622CA18D42E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

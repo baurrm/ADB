@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FEDA8CDD-8CE6-74D1-8BE8-34D8F7A6706E" name="Villegar">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:42:49 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Villager_ID" id="A2D7D851-54D9-19CF-2FDF-A6F4BA187491">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:44:57 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="First_Name" id="090DE3D0-868B-FAB9-4598-D48C687F5FD2">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:46:24 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Last_Name" id="146A786E-8DD2-0E36-C07C-6524F09077C1">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:46:37 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Sex" id="4FA1CC87-83B0-6BB4-28E0-B443124E9AC0">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:46:42 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT033</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Age" id="39EE5DDA-540B-3246-0215-DCEE3DD0DD5C">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:46:48 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Job_ID" id="2C98956F-3EE4-F132-A9B2-42305AF06793">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:46:54 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Disease_ID" id="4064CD55-D315-C711-E781-CE5DDA8CDF57">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:47:03 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Competence" id="10CEBD65-CF81-93EF-5CCD-D4857B912098">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 10:48:48 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Happiness" id="9307814B-D964-85A4-A21F-3F4C384E0B90">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:24:42 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Animal_ID" id="19577BBF-A3C7-81EB-1D65-EA049BFB8A99">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:35:15 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

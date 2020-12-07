@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="job_is_located_at" directorySegmentName="seg_0" id="B7D197AE-7F2D-CAA4-7C5D-8F808AFFF3A9">
+<createdBy>User</createdBy>
+<createdTime>2020-10-08 11:35:50 UTC</createdTime>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<engineerTo>
+<item key="EED42CDE-AAFF-CF82-C6C0-D094B69A999C" value="true"/>
+<item key="E2521265-242B-20AD-7C71-CE54E9F3B193" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>935BC595-77FA-065E-7B95-2767567785F2</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>475D0C0B-07A3-CBE5-0109-A1906D5B93CB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C9A3A438-9707-4716-2512-2816FB779D15" containerWithKeyObject="DE54CD63-E91D-D73A-F682-5E14ECCF67D1" localFKIndex="60BBEE73-6109-81F3-D3BA-743CF3C2AD0F" name="Villegar_Family_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-10-09 12:53:38 UTC</createdTime>
+<generatorID>5CE36800-FB14-A540-A6C2-B2193DCB3029</generatorID>
+<ownerDesignName>Village_ERM</ownerDesignName>
+<referredTableLongName>Family</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D4E794AD-9040-F405-DF19-8E492FC455AA</referredTableID>
+<keyObject>7AA0AEE4-FF7B-E467-2FE9-672A1D6C3735</keyObject>
+<referredKeyID>7AA0AEE4-FF7B-E467-2FE9-672A1D6C3735</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Family_ID1</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
